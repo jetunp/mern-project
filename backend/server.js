@@ -18,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/goals', require('./routes/api/goalRoutes'));
+app.use('/api/users', require('./routes/api/userRoutes'));
 
 //use the error handler, this will override the default express error handler
 app.use(errorHandler);
